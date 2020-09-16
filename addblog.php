@@ -15,7 +15,7 @@
         if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             $blog_title = $_POST['blog_title'];
-            $srt_dec = $_POST['blog_title'];
+            $srt_dec = $_POST['srt_dec'];
             $blog = $_POST['blog'];
             $date = date('Y-m-d H:i:s');
             $sql = "INSERT INTO `blog` (`admin_id`, `blog_title`, `srt_dec`, `blog`, `date`) VALUES ( '$id', '$blog_title', '$srt_dec', '$blog', '$date')";
